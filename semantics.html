@@ -56,13 +56,52 @@
                     </tr>
                 </tfoot>
             </table>
-            
-
-
-
         </section>
         <section>
             <h2>Formas</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                 <label for="name">Jūsu vārds:</label>
+                 <input type="text" name="name" id="name">
+                 <label for="email">Jūsu epasts:</label>
+                 <input type="email" name="email" id="email">
+                 <label for="password">Jūsu parole:</label>
+                 <input type="password" name="password" id="password">
+                 <label for="password_repeat">Atkārtot paroli:</label>
+                 <input type="password" name="password_repeat" id="password_repeat">
+                 
+                 <fieldset >
+                    <legend>Par jums</legend>
+                
+                <h5>Cik laika jūs pavadāt pie datora?</h5> 
+                <input type="radio" name="pc_time" id="ans1" value="1 stunda">
+                <label for="ans1">1 stunda</label>
+                <input type="radio" name="pc_time" id="ans2" value="3 stundas">
+                <label for="ans2">3 stundas</label>
+                <input type="radio" name="pc_time" id="ans3" value="5 stundas">
+                <label for="ans3">5 stundas</label>
+                </fieldset>
+                <fieldset>
+                    <label for="bio">Par jums</label>
+                    <textarea name="bio" id="bio"></textarea>
+                </fieldset>
+                <label for="car">Jūsu automašīnas marka:</label>
+                <select name="car" id="car">
+                    <option value=""></option>
+                    <option value="1">Tesla</option>
+                    <option value="2">Mercedes</option>
+                    <option value="3">BMW</option>
+                </select>
+                <input type="color" name="" id=""> 
+                <input type="file" name="" id=""> 
+                <input type="date" name="" id=""> 
+                <input type="time" name="" id=""> 
+                <div>
+                    <input type="reset" value="Notīrīt formu">
+                    <input type="submit" value="Reģistrēties">
+                </div>
+                
+                
+            </form>
 
         </section>
         <section>
