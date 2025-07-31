@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="./style.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <!-- emmet -->
     <header>
         <h1>Semantiskie elementi</h1>
@@ -18,37 +22,37 @@
         <a href=""></a>
     </nav>
     <main>
-        
+
         <section>
             <h2>HTML Tabulas</h2>
             <table style="width: 100%;">
                 <thead>
-                     <tr style="background-color: deepskyblue;">
-                    <td>Vārds</td>
-                    <td>Uzvārds</td>
-                    <td>Epasts</td>
-                    <td>Darbības</td>
-                </tr>
+                    <tr style="background-color: deepskyblue;">
+                        <td>Vārds</td>
+                        <td>Uzvārds</td>
+                        <td>Epasts</td>
+                        <td>Darbības</td>
+                    </tr>
                 </thead>
-               <tbody>
-                <tr>
-                    <td colspan="2">Jānis Zariņš</td>
-                    <!-- <td>Zariņš</td> ctrl+/-->
-                    <td rowspan="2">janis@inbox.lv</td>
-                    <td>
-                        <button>Rediģēt</button>
-                        <button>Dzēst</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jānis</td>
-                    <td>Zariņš</td>
-                    <!-- <td>janis@inbox.lv</td> -->
-                    <td>
-                        <button>Rediģēt</button>
-                        <button>Dzēst</button>
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Jānis Zariņš</td>
+                        <!-- <td>Zariņš</td> ctrl+/-->
+                        <td rowspan="2">janis@inbox.lv</td>
+                        <td>
+                            <button>Rediģēt</button>
+                            <button>Dzēst</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jānis</td>
+                        <td>Zariņš</td>
+                        <!-- <td>janis@inbox.lv</td> -->
+                        <td>
+                            <button>Rediģēt</button>
+                            <button>Dzēst</button>
+                        </td>
+                    </tr>
                 </tbody>
                 <tfoot style="background-color: gray;">
                     <tr>
@@ -60,51 +64,78 @@
         <section>
             <h2>Formas</h2>
             <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-                 <label for="name">Jūsu vārds:</label>
-                 <input type="text" name="name" id="name">
-                 <label for="email">Jūsu epasts:</label>
-                 <input type="email" name="email" id="email">
-                 <label for="password">Jūsu parole:</label>
-                 <input type="password" name="password" id="password">
-                 <label for="password_repeat">Atkārtot paroli:</label>
-                 <input type="password" name="password_repeat" id="password_repeat">
-                 
-                 <fieldset >
-                    <legend>Par jums</legend>
-                
-                <h5>Cik laika jūs pavadāt pie datora?</h5> 
-                <input type="radio" name="pc_time" id="ans1" value="1 stunda">
-                <label for="ans1">1 stunda</label>
-                <input type="radio" name="pc_time" id="ans2" value="3 stundas">
-                <label for="ans2">3 stundas</label>
-                <input type="radio" name="pc_time" id="ans3" value="5 stundas">
-                <label for="ans3">5 stundas</label>
-                </fieldset>
+                <label for="name">Jūsu vārds:</label>
+                <input type="text" name="name" id="name" required maxlength="20" minlength="3">
+                <label for="email">Jūsu epasts:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Jūsu parole:</label>
+                <input type="password" name="password" id="password"
+                    pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$">
+                <label for="password_repeat">Atkārtot paroli:</label>
+                <input type="password" name="password_repeat" id="password_repeat">
+
                 <fieldset>
-                    <label for="bio">Par jums</label>
-                    <textarea name="bio" id="bio"></textarea>
+                    <legend>Par jums</legend>
+                    <h5>Cik laika jūs pavadāt pie datora?</h5>
+                    <input type="radio" name="pc_time" id="ans1" value="1 stunda">
+                    <label for="ans1">1 stunda</label>
+                    <input type="radio" name="pc_time" id="ans2" value="3 stundas">
+                    <label for="ans2">3 stundas</label>
+                    <input type="radio" name="pc_time" id="ans3" value="5 stundas">
+                    <label for="ans3">5 stundas</label>
                 </fieldset>
+                <fieldset >
+                    <label for="bio">Par jums</label>
+                    <textarea name="bio" id="bio" readonly></textarea>
+               
                 <label for="car">Jūsu automašīnas marka:</label>
-                <select name="car" id="car">
-                    <option value=""></option>
+                <select name="car" id="car" required>
+                    <option value="">-</option>
                     <option value="1">Tesla</option>
                     <option value="2">Mercedes</option>
                     <option value="3">BMW</option>
                 </select>
-                <input type="color" name="" id=""> 
-                <input type="file" name="" id=""> 
-                <input type="date" name="" id=""> 
-                <input type="time" name="" id=""> 
-                <div>
+                </fieldset>
+
+                <div >
+                    <!-- <input type="color" name="" id="">
+                    <input type="file" name="" id="" accept="image/png">
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                    <input type="number" name="number" id="" min="10" max="100" step="5"> -->
+                </div>
+
+                <div style="background-color: rgb(192, 217, 255);">
                     <input type="reset" value="Notīrīt formu">
                     <input type="submit" value="Reģistrēties">
                 </div>
-                
-                
             </form>
-
         </section>
         <section>
+            <h3>Satura ievietošana (Embed)</h3>
+            <iframe src="./index.html" frameborder="0"></iframe>
+
+            <h5>Youtube</h5>
+            <iframe id="youtube1" src="https://www.youtube.com/embed/ok-plXXHlWw?si=32N9TVBc4rR145Ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- vimeo -->
+
+             <h5>Google maps</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.6529108709565!2d24.160537767332215!3d56.93761431555273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf2881ab3a2d%3A0x38f05fb5534b5b16!2zRWlyb3BhcyBUxIFsbcSBY8SrYmFzIGNlbnRycw!5e0!3m2!1sen!2slv!4v1753985830417!5m2!1sen!2slv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Feropascentrs.lv&layout&size&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+            <h5>Video un audio</h5>
+            <video width="400"  autoplay muted>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+            <audio controls autoplay loop>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
 
         </section>
     </main>
