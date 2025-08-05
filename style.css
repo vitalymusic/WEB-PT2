@@ -129,3 +129,25 @@ section{
     border-bottom:2px solid white;
     padding: 20px;
 }
+
+section#flex{
+    /* ātrā bloku sakārtošana */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+
+}
+
+section#flex div{
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+        border:1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50pt;
+        align-items: center;
+}
