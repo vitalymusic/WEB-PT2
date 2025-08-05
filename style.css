@@ -63,7 +63,7 @@ table tr:not(table tr:last-child){
 
 
 :root{
-    --size1:20pt;
+    --size1:16px;
     --krasa1:#5AB1BB;
     --krasa2:#F7DD72;
     --teksta-krasa3:#1E152A;
@@ -90,7 +90,9 @@ header{
 *{
      /*Selektors * nozīmē atlasīt visus elementus  */
 
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     /* Maina veidu kā aprēķina reālo elementa izmēru */
 
 }
