@@ -68,12 +68,15 @@ table tr:not(table tr:last-child){
     --krasa2:#F7DD72;
     --teksta-krasa3:#1E152A;
 
+
+   
 }
 
 
 body{
     background-color: var(--krasa1);
     color:var(--teksta-krasa3);
+    
 }
 
 header{
@@ -84,11 +87,17 @@ header{
 /* Bloka elementi */
 
 /* h1-h6,div,p,ul,form,visi semantiskie */
+*{
+     /*Selektors * nozīmē atlasīt visus elementus  */
 
+    box-sizing: border-box;
+    /* Maina veidu kā aprēķina reālo elementa izmēru */
+
+}
 
 h1{
     width:500px;
-    height: 200px;
+    /* height: 200px; */
     background-color: var(--krasa2);
 
     margin:20px;
@@ -103,6 +112,13 @@ h1{
     border-style: outset;
     border-radius: 10px;
 
+    padding: 20px;
+    padding: 10px 20px;
+    /* padding-top:50px; */
+    text-align: center;
+    color:deeppink;
+
+    
     
 
 }
