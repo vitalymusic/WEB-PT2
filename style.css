@@ -1,0 +1,108 @@
+/* 1. Selektori */
+
+/* header,h2,table,form{
+    color:red;
+    background-color: beige;
+}
+
+img{
+
+}
+
+button{
+    color:white;
+}
+
+button.edit_btn{
+    background-color: rgb(93, 92, 92);    
+}
+button.del_btn{
+    background-color: rgb(196, 9, 9);   
+}
+
+
+form{
+    color:black;
+
+}
+/* Atlase pēc vienas vai vairākām klasēm */
+/* .edit_btn.ok{
+    outline:2px solid red;
+}  */
+
+/* Atlase pēc ID */
+
+/*
+#main1{
+     background-color: rgb(248, 252, 209);   
+}
+
+header h1{
+    color:blue;
+}
+header > h1{
+    color:blue;
+}
+header + h1{
+    color:blue;
+}
+
+table tr:nth-child(2){
+    background-color: aquamarine;
+}
+table tr:nth-child(odd){
+    background-color: aquamarine;
+}*/
+/* table tr:nth-child(even){
+    background-color: rgb(240, 209, 2);
+}
+
+table tr:not(table tr:last-child){
+    color:rgb(9, 83, 245)
+} */
+
+
+:root{
+    --size1:20pt;
+    --krasa1:#5AB1BB;
+    --krasa2:#F7DD72;
+    --teksta-krasa3:#1E152A;
+
+}
+
+
+body{
+    background-color: var(--krasa1);
+    color:var(--teksta-krasa3);
+}
+
+header{
+    
+}
+
+
+/* Bloka elementi */
+
+/* h1-h6,div,p,ul,form,visi semantiskie */
+
+
+h1{
+    width:500px;
+    height: 200px;
+    background-color: var(--krasa2);
+
+    margin:20px;
+    margin:20px 50px;
+    margin:20px auto;
+    margin-top:100px;
+    /* Margin - ārējā atkāpe */
+
+    border:5px solid black;
+    border-color:deeppink;
+    border-width:2px;
+    border-style: outset;
+    border-radius: 10px;
+
+    
+
+}
