@@ -118,7 +118,14 @@ h1{
     text-align: center;
     color:deeppink;
 
-    
+
+
     
 
+}
+
+section{
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    padding: 20px;
 }
