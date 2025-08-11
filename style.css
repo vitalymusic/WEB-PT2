@@ -218,4 +218,46 @@ section#flex div{
     outline: 3px solid white;
     padding: 10px;
     /* border:none; */
+
+    cursor: pointer;
   }
+
+
+  /* :hover */
+
+
+  h1:hover {
+    background-color: antiquewhite;
+  }
+
+
+  button:hover{
+    background-color:rgba(251, 251, 255, 0.269)
+  }
+
+  input:focus, textarea:focus-visible{
+    background-color: rgba(255, 13, 13, 0.594);
+  }
+
+/* Foni */
+
+
+body{
+    background-image: linear-gradient(rgb(157, 157, 255),rgb(0, 85, 255));
+    background-image: radial-gradient(rgb(157, 157, 255),rgb(0, 85, 255));
+    background: #2A7B9B;
+    background: linear-gradient(20deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 26%, rgba(111, 168, 209, 1) 55%, rgba(196, 95, 216, 1) 79%, rgba(237, 221, 83, 1) 100%);
+
+    background-image: url('./images/jebkads.gif');
+    background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D');
+
+    background-size: 100%;
+    background-size: cover;
+
+    background-position: -20px -350px;
+    background-position: top right;
+    background-position: bottom right;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+
