@@ -209,7 +209,13 @@ section#flex div{
 
 
   .ikonas{
-    font-size: 5em !important;
+    font-size: 3em !important;
     color:red;
   }
-  
+
+  button{
+    background: none;
+    outline: 3px solid white;
+    padding: 10px;
+    /* border:none; */
+  }
