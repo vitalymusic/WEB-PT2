@@ -172,10 +172,16 @@ section#flex div{
      font-weight: 100;
      font-style: oblique;
      text-decoration: underline double red;  
+     font-size: 3em;
 
 
   }  
 
-  p{
+  a{
+    text-decoration: none;
+    color: var(--teksta-krasa3);
+  }
 
+  p{
+    
   }
