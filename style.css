@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Meow+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: "Mans šrifts";
+    src: url('./LeckerliOne-Regular.ttf');
+}
+
+
 /* 1. Selektori */
 
 /* header,h2,table,form{
@@ -160,7 +169,7 @@ section#flex div{
 
 /* Teksta noformēšana */
     body{
-        font-family: sans-serif;
+        font-family: 'Roboto';
         font-size: 16px;
         color: var(--teksta-krasa3);
         font-weight: normal;
@@ -173,7 +182,8 @@ section#flex div{
      font-style: oblique;
      text-decoration: underline double red;  
      font-size: 3em;
-
+     text-align: center;
+     font-family: "Leckerli One", cursive;
 
   }  
 
@@ -183,5 +193,16 @@ section#flex div{
   }
 
   p{
-    
+    max-width: 500px;
+    margin: 20px auto;
+    text-indent: 1em;
+    word-spacing: 1px;
+    font-family: "Mans šrifts";
+    /* letter-spacing: 5px; */
+
+
   }
+
+
+  /* Google fonts */    
+
