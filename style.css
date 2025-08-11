@@ -206,3 +206,10 @@ section#flex div{
 
   /* Google fonts */    
 
+
+
+  .ikonas{
+    font-size: 5em !important;
+    color:red;
+  }
+  
