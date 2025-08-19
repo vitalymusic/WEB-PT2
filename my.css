@@ -3,8 +3,9 @@
 
 /* Root: Color Variables */
 :root {
+  /* --bs-secondary-rgb:#b6ec7d; */
   --color-primary: #007bff;
-  --color-secondary: #6c757d;
+  --color-secondary: #b8e688;
   --color-success: #28a745;
   --color-danger: #dc3545;
   --color-warning: #ffc107;
@@ -542,3 +543,16 @@ textarea:valid {
   .lg-block { display: block; }
   .lg-text-right { text-align: right; }
 }
+
+
+.row{
+  /* gap:10px; */
+}
+
+/* .mans{
+  background-color: rgb(255, 5, 5) !important;
+}
+
+.bg-secondary{
+  background-color: rgb(26, 255, 5) !important;
+} */
